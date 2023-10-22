@@ -8,7 +8,17 @@ module.exports = {
     './templates/csutomers/*.liquid',
   ],
   theme: {
-    extend: {},
+    screens:{
+      sm: "480px",
+      md: "768px",
+      lg: "992px",
+      xl: "1122px"
+    },
+    extend: {
+      fontFamily:{
+        mavenReg: "Maven Pro",
+      }
+    },
   },
   plugins: [],
 }

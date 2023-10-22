@@ -1,0 +1,88 @@
+<header class="font-mavenReg">
+    <!-- top bar -->
+    <div class="bg-black py-4 px-3 text-white text-center uppercase text-xs">
+        <span>Complementry Gift Wrapping</span>
+    </div>
+
+    <!-- main nav -->
+    <div class="relative bg-white">
+        <!-- container-->
+        <div class="container mx-auto"> 
+            <div class="p-5 px-2 grid  gap-2 grid-cols-[60px,1fr,60px]
+            lg:grid-cols-[1fr,180px,1fr]
+            items-center
+            ">
+                <!-- small devie left col -->
+                <div class="grid grid-cols-2 gap-3 items-center lg:hidden ">
+                    <div class="menu-toggle">
+                        {% render 'menu-icon' %}
+                    </div>
+                    <div class="search-toggle justify-self-end">
+                        {% render 'search-icon' %}
+                    </div>
+                </div>
+                <!-- large device left col-->
+                <div class="hidden lg:block">
+                    <div class="grid grid-flow-col gap-2 text-xs  uppercase lg:place-content-start lg:gap-4">
+                        <div class="country-code">
+                            <b>UAE(AED) </b>
+                         </div>
+                         <div class="customer-support">
+                             Can we help you ?
+                         </div>
+                         <div class="contact-info">
+                             9816975832
+                         </div>
+                         <div class="lang-switcher">
+                             Language: EN
+                         </div>
+                    </div>
+                </div>
+
+                <div class="web-logo place-self-center">
+                    <a href="{{shop.url}}" >
+                    {% render 'logo' %}
+                    </a>
+                </div>
+                <div class="header-right">
+                    <div class="grid grid-flow-col gap-2 lg:gap-3 lg:place-content-end">
+                    <div class="customer-toggle">
+                        {% render 'user-icon' %}
+                    </div>
+                    <div class="hidden lg:block search-toggle">
+                        {% render 'search-icon' %}
+                    </div>
+                    <div class="hidden lg:block search-toggle">
+                        {% render 'heart-icon' %}
+                    </div>
+                    <div class="cart-toggle relative">
+                        {% render 'bag-icon' %}
+                        <span class="absolute top-[-14px] right-0 bg-black rounded-full w-4 h-4 text-white text-center leading-4 text-xs">0</span>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+
+        <!-- Mobile menu -->
+        <div class="mobile-menu-wrap bg-white">
+            <div class="mobile-nav p-4 border-b ">
+                <ul class="grid gap-4">
+                    <li><a href="#" class="font-semibold uppercase text-sm">New</a></li>
+                    <li><a href="#" class="font-semibold uppercase text-sm">Excliusive Services</a></li>
+                    <li><a href="#" class="font-semibold uppercase text-sm">Fragrance</a></li>
+                    <li><a href="#" class="font-semibold uppercase text-sm">Fragrance</a></li>
+                    <li><a href="#" class="font-semibold uppercase text-sm">La Collection Particuler</a></li>
+                    <li><a href="#" class="font-semibold uppercase text-sm">Make Up</a></li>
+                    <li><a href="#" class="font-semibold uppercase text-sm">Skincare</a></li>
+                    <li><a href="#" class="font-semibold uppercase text-sm">Couture</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        </div>
+    </div>
+
+
+</header>
