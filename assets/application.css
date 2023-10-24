@@ -575,6 +575,10 @@ video {
   }
 }
 
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
@@ -585,6 +589,10 @@ video {
 
 .right-0 {
   right: 0px;
+}
+
+.top-0 {
+  top: 0px;
 }
 
 .top-\[-14px\] {
@@ -620,6 +628,10 @@ video {
   height: 1.5rem;
 }
 
+.h-\[calc\(100vh-112px\)\] {
+  height: calc(100vh - 112px);
+}
+
 .w-4 {
   width: 1rem;
 }
@@ -636,12 +648,24 @@ video {
   width: 1.5rem;
 }
 
+.w-full {
+  width: 100%;
+}
+
 .grid-flow-col {
   grid-auto-flow: column;
 }
 
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-cols-\[1fr\2c 20px\] {
+  grid-template-columns: 1fr 20px;
+}
+
+.grid-cols-\[20px\2c 1fr\] {
+  grid-template-columns: 20px 1fr;
 }
 
 .grid-cols-\[60px\2c 1fr\2c 60px\] {
@@ -670,6 +694,10 @@ video {
 
 .justify-self-end {
   justify-self: end;
+}
+
+.overflow-y-auto {
+  overflow-y: auto;
 }
 
 .rounded-full {
@@ -746,6 +774,27 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+/* custom css start here */
+
+.mobile-menu-active {
+  display: block;
+}
+
+.menu-active .header-left,
+.menu-active .header-right>.grid>div
+{
+  visibility: hidden;
+  opacity: 0;
+}
+
+.menu-active .header-right>.grid>div.menu-close.hidden {
+  display: block !important;
+  visibility: visible;
+  opacity: 1;
+  position: absolute;
+  right: 0;
 }
 
 @media (min-width: 768px) {

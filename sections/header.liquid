@@ -1,4 +1,4 @@
-<header class="font-mavenReg">
+<header class="font-mavenReg fixed top-0 w-full">
     <!-- top bar -->
     <div class="bg-black py-4 px-3 text-white text-center uppercase text-xs">
         <span>Complementry Gift Wrapping</span>
@@ -13,7 +13,7 @@
             items-center
             ">
                 <!-- small devie left col -->
-                <div class="grid grid-cols-2 gap-3 items-center lg:hidden ">
+                <div class="header-left grid grid-cols-2 gap-3 items-center lg:hidden ">
                     <div class="menu-toggle">
                         {% render 'menu-icon' %}
                     </div>
@@ -44,7 +44,7 @@
                     {% render 'logo' %}
                     </a>
                 </div>
-                <div class="header-right">
+                <div class="header-right relative">
                     <div class="grid grid-flow-col gap-2 lg:gap-3 lg:place-content-end">
                     <div class="customer-toggle">
                         {% render 'user-icon' %}
@@ -59,25 +59,113 @@
                         {% render 'bag-icon' %}
                         <span class="absolute top-[-14px] right-0 bg-black rounded-full w-4 h-4 text-white text-center leading-4 text-xs">0</span>
                     </div>
+                    
+                    <div class="menu-close hidden">
+                        {% render 'close-icon' %}
+                    </div>
+
                     </div>
                 </div>
             </div>
 
 
         <!-- Mobile menu -->
-        <div class="mobile-menu-wrap bg-white">
+        <div class="mobile-menu-wrap bg-white absolute w-full overflow-y-auto h-[calc(100vh-112px)] hidden">
             <div class="mobile-nav p-4 border-b ">
                 <ul class="grid gap-4">
                     <li><a href="#" class="font-semibold uppercase text-sm">New</a></li>
                     <li><a href="#" class="font-semibold uppercase text-sm">Excliusive Services</a></li>
-                    <li><a href="#" class="font-semibold uppercase text-sm">Fragrance</a></li>
-                    <li><a href="#" class="font-semibold uppercase text-sm">Fragrance</a></li>
-                    <li><a href="#" class="font-semibold uppercase text-sm">La Collection Particuler</a></li>
-                    <li><a href="#" class="font-semibold uppercase text-sm">Make Up</a></li>
-                    <li><a href="#" class="font-semibold uppercase text-sm">Skincare</a></li>
+                    <li class="grid grid-cols-[1fr,20px] gap-4 items-center">
+                        <a href="#" class="font-semibold uppercase text-sm">Fragrance</a>
+                        <button>
+                            {% render 'arrow-right' %}
+                        </button>    
+                    </li>
+                    <li class="grid grid-cols-[1fr,20px] gap-4 items-center"><a href="#" class="font-semibold uppercase text-sm">La Collection Particuler</a> 
+                    <button>
+                        {% render 'arrow-right' %}
+                    </button>  </li>
+                    <li class="grid grid-cols-[1fr,20px] gap-4 items-center"><a href="#" class="font-semibold uppercase text-sm">Make Up</a> {% render 'arrow-right' %}</button></li>
+                    <li class="grid grid-cols-[1fr,20px] gap-4 items-center"><a href="#" class="font-semibold uppercase text-sm">Skincare</a>
+                    <button>
+                        {% render 'arrow-right' %}
+                    </button>  </li>
                     <li><a href="#" class="font-semibold uppercase text-sm">Couture</a></li>
                 </ul>
             </div>
+
+            <div class="mobile-nav-footer p-4">
+                <ul class="grid gap-4">
+                    <li>
+                       <a href="#" class="grid grid-cols-[20px,1fr] gap-3 items-center">
+                        {% render 'user-icon' %}
+                        <span>
+                            My Account
+                           </span>
+                       </a> 
+                    </li>
+                    <li>
+                       <a href="#" class="grid grid-cols-[20px,1fr] gap-3 items-center">
+                        {% render 'chat-icon' %}
+                        <span>
+                            Can we help You ?
+                           </span>
+                       </a> 
+                    </li>
+                    <li>
+                        <a href="#" class="grid grid-cols-[20px,1fr] gap-3 items-center">
+                         {% render 'phone-icon' %}
+                         <span>
+                             Customer Services 9816975832
+                            </span>
+                        </a> 
+                     </li>
+                     <li>
+                        <a href="#" class="grid grid-cols-[20px,1fr] gap-3 items-center">
+                         {% render 'envelop-icon' %}
+                         <span>
+                             Newsletter
+                            </span>
+                        </a> 
+                     </li>
+                     <li>
+                        <a href="#" class="grid grid-cols-[20px,1fr] gap-3 items-center">
+                         {% render 'heart-icon' %}
+                         <span>
+                             Wishlist
+                            </span>
+                        </a> 
+                     </li>
+                     <li>
+                        <a href="#" class="grid grid-cols-[20px,1fr] gap-3 items-center">
+                         {% render 'location-icon' %}
+                         <span>
+                             Your Store
+                            </span>
+                        </a> 
+                     </li>
+
+                     <li class="grid grid-cols-[1fr,20px] gap-4 items-center">
+                        <a href="#">
+                        Language EN
+                        </a> 
+                     <button>
+                         {% render 'arrow-right' %}
+                     </button>  </li>
+                     <li class="grid grid-cols-[1fr,20px] gap-4 items-center">
+                        <a href="#" class="grid grid-cols-[20px,1fr] gap-3 items-center">
+                            {% render 'global-icon' %}
+                            <span class="font-semibold text-sm">
+                                UAE (AED)
+                               </span>
+                           </a> 
+                     <button>
+                         {% render 'arrow-right' %}
+                     </button>  </li>
+
+                </ul>
+            </div>
+
         </div>
 
 
