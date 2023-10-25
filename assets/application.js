@@ -8,6 +8,8 @@ let menuClose = document.querySelectorAll(".menu-close");
 let subMenuBtn = document.querySelectorAll(".submenu-button");
 let submenuBack = document.querySelectorAll(".submenu-back");
 let subMenuConatiner = document.querySelectorAll(".submenu-container");
+let subMenuCloase = document.querySelectorAll(".submenu-close-btn");
+let subMenuItem = document.querySelectorAll(".submenu-item");
 
 
 menuButton.addEventListener("click", function(){
@@ -47,3 +49,27 @@ submenuBack.forEach(function(submenuback){
         backstep.classList.remove("submenu-open");
     })
 })
+
+
+subMenuItem.forEach(function(e){
+    e.addEventListener("mouseover", function(item){
+        const itemSelect = item.target.closest(".submenu-item");
+        itemSelect.classList.add("desktop-submenu-open")
+    })
+    e.addEventListener("mouseout", function(item){
+        const itemSelect = item.target.closest(".submenu-item");
+        itemSelect.classList.remove("desktop-submenu-open")
+    })
+})
+
+
+
+//submenu close for desktop
+subMenuCloase.forEach(function(e){
+    e.addEventListener("click", function(event){
+       const deskSubMenu = event.target.closest(".submenu-item");
+       deskSubMenu.classList.remove("desktop-submenu-open")
+    })
+})
+
+// hover

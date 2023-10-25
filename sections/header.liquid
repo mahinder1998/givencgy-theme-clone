@@ -7,13 +7,10 @@
     <!-- main nav -->
     <div class="main-navbar relative bg-white">
         <!-- container-->
-        <div class="container mx-auto"> 
-            <div class="p-5 px-2 grid  gap-2 grid-cols-[60px,1fr,60px]
-            lg:grid-cols-[1fr,180px,1fr]
-            items-center
-            ">
+        <div class="container mx-auto">
+            <div class="p-5 px-2 grid gap-2 grid-cols-[60px,1fr,60px] items-center lg:grid-cols-[1fr,180px,1fr] lg:px-0">
                 <!-- small devie left col -->
-                <div class="header-left grid grid-cols-2 gap-3 items-center lg:hidden ">
+                <div class="header-left grid grid-cols-2 gap-3 items-center lg:hidden">
                     <div class="menu-toggle">
                         {% render 'menu-icon' %}
                     </div>
@@ -23,349 +20,606 @@
                 </div>
                 <!-- large device left col-->
                 <div class="hidden lg:block">
-                    <div class="grid grid-flow-col gap-2 text-xs  uppercase lg:place-content-start lg:gap-4">
+                    <div class="grid grid-flow-col gap-2 text-xs uppercase lg:place-content-start lg:gap-4">
                         <div class="country-code">
                             <b>UAE(AED) </b>
-                         </div>
-                         <div class="customer-support">
-                             Can we help you ?
-                         </div>
-                         <div class="contact-info">
-                             9816975832
-                         </div>
-                         <div class="lang-switcher">
-                             Language: EN
-                         </div>
+                        </div>
+                        <div class="customer-support">
+                            Can we help you ?
+                        </div>
+                        <div class="contact-info">
+                            9816975832
+                        </div>
+                        <div class="lang-switcher">
+                            Language: EN
+                        </div>
                     </div>
                 </div>
 
                 <div class="web-logo place-self-center">
-                    <a href="{{shop.url}}" >
-                    {% render 'logo' %}
+                    <a href="{{shop.url}}">
+                        {% render 'logo' %}
                     </a>
                 </div>
                 <div class="header-right relative">
                     <div class="grid grid-flow-col gap-2 lg:gap-3 lg:place-content-end">
-                    <div class="customer-toggle">
-                        {% render 'user-icon' %}
-                    </div>
-                    <div class="hidden lg:block search-toggle">
-                        {% render 'search-icon' %}
-                    </div>
-                    <div class="hidden lg:block search-toggle">
-                        {% render 'heart-icon' %}
-                    </div>
-                    <div class="cart-toggle relative">
-                        {% render 'bag-icon' %}
-                        <span class="absolute top-[-14px] right-0 bg-black rounded-full w-4 h-4 text-white text-center leading-4 text-xs">0</span>
-                    </div>
-                    
-                    <div class="menu-close hidden">
-                        {% render 'close-icon' %}
-                    </div>
+                        <div class="customer-toggle">
+                            {% render 'user-icon' %}
+                        </div>
+                        <div class="hidden lg:block search-toggle">
+                            {% render 'search-icon' %}
+                        </div>
+                        <div class="hidden lg:block search-toggle">
+                            {% render 'heart-icon' %}
+                        </div>
+                        <div class="cart-toggle relative">
+                            {% render 'bag-icon' %}
+                            <span class="absolute top-[-14px] right-0 bg-black rounded-full w-4 h-4 text-white text-center leading-4 text-xs">0</span>
+                        </div>
 
+                        <div class="menu-close hidden">
+                            {% render 'close-icon' %}
+                        </div>
                     </div>
                 </div>
             </div>
 
-
-        <!-- Mobile menu -->
-        <div class="mobile-menu-wrap bg-white absolute w-full overflow-y-auto h-[calc(100vh-112px)] hidden">
-            <div class="mobile-nav p-4 border-b ">
-                <ul class="grid gap-4">
-                    <li><a href="#" class="font-semibold uppercase text-sm">New</a></li>
-                    <li><a href="#" class="font-semibold uppercase text-sm">Excliusive Services</a></li>
-                    <li class="grid grid-cols-[1fr,20px] gap-4 items-center">
-                        <a href="#" class="font-semibold uppercase text-sm">Fragrance</a>
-                        <button class="submenu-button">
-                            {% render 'arrow-right' %}
-                        </button> 
-                        <div class="submenu-container fixed top-0 bg-white left-0 w-full h-full overflow-y-auto translate-x-[100%] transition duration-150 ease-out overflow-x-hidden">
-                            <div class="submenu-header grid grid-cols-[20px,1fr,30px] items-center py-5 px-4 gap-3 border-b border-[#cecece]">
-                                <div class="submenu-back">
-                                    {% render 'arrow-back' %}
+            <!-- Mobile menu -->
+            <div class="mobile-menu-wrap bg-white absolute w-full overflow-y-auto h-[calc(100vh-112px)] hidden left-0">
+                <div class="mobile-nav p-4 border-b">
+                    <ul class="grid gap-4">
+                        <li><a href="#" class="font-semibold uppercase text-sm">New</a></li>
+                        <li><a href="#" class="font-semibold uppercase text-sm">Excliusive Services</a></li>
+                        <li class="grid grid-cols-[1fr,20px] gap-4 items-center">
+                            <a href="#" class="font-semibold uppercase text-sm">Fragrance</a>
+                            <button class="submenu-button">
+                                {% render 'arrow-right' %}
+                            </button>
+                            <div class="submenu-container fixed top-0 bg-white left-0 w-full h-full overflow-y-auto translate-x-[100%] transition duration-150 ease-out overflow-x-hidden">
+                                <div class="submenu-header grid grid-cols-[20px,1fr,30px] items-center py-5 px-4 gap-3 border-b border-[#cecece]">
+                                    <div class="submenu-back">
+                                        {% render 'arrow-back' %}
+                                    </div>
+                                    <div class="text-sm uppercase font-bold">Fragrance</div>
+                                    <div class="menu-close relative">
+                                        {% render 'close-icon' %}
+                                    </div>
                                 </div>
-                                <div class="text-sm uppercase font-bold">Fragrance</div>
-                                <div class="menu-close relative">
-                                    {% render 'close-icon' %}
-                                </div>
-                            </div>
-                            <div class="child-menu-wrap">
-                                <!-- child links -->
-                                <ul class="grid gap-4 p-4 child-menu">
-                                    <li><a href="#" class="font-semibold uppercase text-sm">See All Fragrance</a></li>
-                                    <li class="grid grid-cols-[1fr,20px] gap-4 items-center">
-                                        <a href="#" class="font-semibold uppercase text-sm">In The SpotLight</a>
-                                        <button class="submenu-button">
-                                            {% render 'arrow-right' %}
-                                        </button> 
-                                        <!-- grandcgild link -->
-                                        <div class="submenu-container fixed top-0 bg-white left-0 w-full h-full overflow-y-auto translate-x-[100%] transition duration-150 ease-out">
-                                            <div class="submenu-header grid grid-cols-[20px,1fr,30px] items-center py-5 px-4 gap-3 border-b border-[#cecece]">
-                                                <div class="submenu-back">
-                                                    {% render 'arrow-back' %}
+                                <div class="child-menu-wrap">
+                                    <!-- child links -->
+                                    <ul class="grid gap-4 p-4 child-menu">
+                                        <li><a href="#" class="font-semibold uppercase text-sm">See All Fragrance</a></li>
+                                        <li class="grid grid-cols-[1fr,20px] gap-4 items-center">
+                                            <a href="#" class="font-semibold uppercase text-sm">In The SpotLight</a>
+                                            <button class="submenu-button">
+                                                {% render 'arrow-right' %}
+                                            </button>
+                                            <!-- grandcgild link -->
+                                            <div class="submenu-container fixed top-0 bg-white left-0 w-full h-full overflow-y-auto translate-x-[100%] transition duration-150 ease-out">
+                                                <div class="submenu-header grid grid-cols-[20px,1fr,30px] items-center py-5 px-4 gap-3 border-b border-[#cecece]">
+                                                    <div class="submenu-back">
+                                                        {% render 'arrow-back' %}
+                                                    </div>
+                                                    <div class="text-sm uppercase font-bold">In The SpotLight</div>
+                                                    <div class="menu-close relative">
+                                                        {% render 'close-icon' %}
+                                                    </div>
                                                 </div>
-                                                <div class="text-sm uppercase font-bold">In The SpotLight</div>
-                                                <div class="menu-close relative">
-                                                    {% render 'close-icon' %}
-                                                </div>
-                                            </div>
-                                            <div class="child-menu-wrap">
-                                                <!-- child links -->
-                                                <ul class="grid gap-4 p-4 child-menu">
-                                                    <li><a href="#" class="font-semibold uppercase text-sm">See All Fragrance</a></li>
-                                                    <li><a href="#" class="font-semibold uppercase text-sm">See All Fragrance</a></li>
-                                                   
-                                                </ul>
-                                            </div>
-                                        </div>  
-                                    </li>
-                                    <li><a href="#" class="font-semibold uppercase text-sm">See All Fragrance</a></li>
-                                    <li class="grid grid-cols-[1fr,20px] gap-4 items-center">
-                                        <a href="#" class="font-semibold uppercase text-sm">In The SpotLight</a>
-                                        <button>
-                                            {% render 'arrow-right' %}
-                                        </button> 
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- campaign links -->
-                            <div class="campaign-links">
-                                <div class="grid grid-cols-2 gap-4 p-4">
-                                    <div class="campaign-image">
-                                        <img src="//www.shopgivenchybeauty.ae/cdn/shop/files/GG-SOCIETY_Mobile_HP_Campaign_Push_Ingredients_Visuals_516x385_100kb_170x.jpg?v=1676274913" alt="">
-                                    </div>
-                                    <div class="camaign-content grid">
-                                        <div class="camaign-heading uppercase">
-                                            Gentelmen Society
-                                        </div>
-                                        <div class="camaign-links">
-                                            <a href="#" class="underline">Discover</a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="grid grid-cols-2 gap-4 p-4">
-                                    <div class="campaign-image">
-                                        <img src="//www.shopgivenchybeauty.ae/cdn/shop/files/GG-SOCIETY_Mobile_HP_Campaign_Push_Ingredients_Visuals_516x385_100kb_170x.jpg?v=1676274913" alt="">
-                                    </div>
-                                    <div class="camaign-content grid">
-                                        <div class="camaign-heading uppercase">
-                                            Gentelmen Society
-                                        </div>
-                                        <div class="camaign-links">
-                                            <a href="#" class="underline">Discover</a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="grid grid-cols-2 gap-4 p-4">
-                                    <div class="campaign-image">
-                                        <img src="//www.shopgivenchybeauty.ae/cdn/shop/files/GG-SOCIETY_Mobile_HP_Campaign_Push_Ingredients_Visuals_516x385_100kb_170x.jpg?v=1676274913" alt="">
-                                    </div>
-                                    <div class="camaign-content grid">
-                                        <div class="camaign-heading uppercase">
-                                            Gentelmen Society
-                                        </div>
-                                        <div class="camaign-links">
-                                            <a href="#" class="underline">Discover</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            
-
-        
-
-
-                        </div>   
-                    </li>
-                    <li class="grid grid-cols-[1fr,20px] gap-4 items-center"><a href="#" class="font-semibold uppercase text-sm">La Collection Particuler</a> 
-                    <button class="submenu-button">
-                        {% render 'arrow-right' %}
-                    </button>
-                    <div class="submenu-container fixed top-0 bg-white left-0 w-full h-full overflow-y-auto translate-x-[100%] transition duration-150 ease-out">
-                            <div class="submenu-header grid grid-cols-[20px,1fr,30px] items-center py-5 px-4 gap-3 border-b border-[#cecece]">
-                                <div class="submenu-back">
-                                    {% render 'arrow-back' %}
-                                </div>
-                                <div class="text-sm uppercase font-bold">La Collection Particuler</div>
-                                <div class="menu-close relative">
-                                    {% render 'close-icon' %}
-                                </div>
-                            </div>
-                            <div class="child-menu-wrap">
-                                <!-- child links -->
-                                <ul class="grid gap-4 p-4 child-menu">
-                                    <li><a href="#" class="font-semibold uppercase text-sm">See All Fragrance</a></li>
-                                    <li class="grid grid-cols-[1fr,20px] gap-4 items-center">
-                                        <a href="#" class="font-semibold uppercase text-sm">In The SpotLight</a>
-                                        <button>
-                                            {% render 'arrow-right' %}
-                                        </button> 
-                                    </li>
-                                    <li><a href="#" class="font-semibold uppercase text-sm">See All Fragrance</a></li>
-                                    <li class="grid grid-cols-[1fr,20px] gap-4 items-center">
-                                        <a href="#" class="font-semibold uppercase text-sm">In The SpotLight</a>
-                                        <button class="submenu-button">
-                                            {% render 'arrow-right' %}
-                                        </button> 
-                                        <!-- grandcgild link -->
-                                        <div class="submenu-container fixed top-0 bg-white left-0 w-full h-full overflow-y-auto translate-x-[100%] transition duration-150 ease-out">
-                                            <div class="submenu-header grid grid-cols-[20px,1fr,30px] items-center py-5 px-4 gap-3 border-b border-[#cecece]">
-                                                <div class="submenu-back">
-                                                    {% render 'arrow-back' %}
-                                                </div>
-                                                <div class="text-sm uppercase font-bold">In The SpotLight 2</div>
-                                                <div class="menu-close relative">
-                                                    {% render 'close-icon' %}
+                                                <div class="child-menu-wrap">
+                                                    <!-- child links -->
+                                                    <ul class="grid gap-4 p-4 child-menu">
+                                                        <li><a href="#" class="font-semibold uppercase text-sm">See All Fragrance</a></li>
+                                                        <li><a href="#" class="font-semibold uppercase text-sm">See All Fragrance</a></li>
+                                                    </ul>
                                                 </div>
                                             </div>
-                                            <div class="child-menu-wrap">
-                                                <!-- child links -->
-                                                <ul class="grid gap-4 p-4 child-menu">
-                                                    <li><a href="#" class="font-semibold uppercase text-sm">See All Fragrance 2</a></li>
-                                                    <li><a href="#" class="font-semibold uppercase text-sm">See All Fragrance 2</a></li>
-                                                   
-                                                </ul>
+                                        </li>
+                                        <li><a href="#" class="font-semibold uppercase text-sm">See All Fragrance</a></li>
+                                        <li class="grid grid-cols-[1fr,20px] gap-4 items-center">
+                                            <a href="#" class="font-semibold uppercase text-sm">In The SpotLight</a>
+                                            <button>
+                                                {% render 'arrow-right' %}
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- campaign links -->
+                                <div class="campaign-links">
+                                    <div class="grid grid-cols-2 gap-4 p-4">
+                                        <div class="campaign-image">
+                                            <img src="//www.shopgivenchybeauty.ae/cdn/shop/files/GG-SOCIETY_Mobile_HP_Campaign_Push_Ingredients_Visuals_516x385_100kb_170x.jpg?v=1676274913" alt="" />
+                                        </div>
+                                        <div class="camaign-content grid">
+                                            <div class="camaign-heading uppercase">
+                                                Gentelmen Society
                                             </div>
-                                        </div>  
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- campaign links -->
-                            <div class="campaign-links">
-                                <div class="grid grid-cols-2 gap-4 p-4">
-                                    <div class="campaign-image">
-                                        <img src="//www.shopgivenchybeauty.ae/cdn/shop/files/GG-SOCIETY_Mobile_HP_Campaign_Push_Ingredients_Visuals_516x385_100kb_170x.jpg?v=1676274913" alt="">
-                                    </div>
-                                    <div class="camaign-content grid">
-                                        <div class="camaign-heading uppercase">
-                                            Gentelmen Society
-                                        </div>
-                                        <div class="camaign-links">
-                                            <a href="#" class="underline">Discover</a>
+                                            <div class="camaign-links">
+                                                <a href="#" class="underline">Discover</a>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
 
-                                <div class="grid grid-cols-2 gap-4 p-4">
-                                    <div class="campaign-image">
-                                        <img src="//www.shopgivenchybeauty.ae/cdn/shop/files/GG-SOCIETY_Mobile_HP_Campaign_Push_Ingredients_Visuals_516x385_100kb_170x.jpg?v=1676274913" alt="">
-                                    </div>
-                                    <div class="camaign-content grid">
-                                        <div class="camaign-heading uppercase">
-                                            Gentelmen Society
+                                    <div class="grid grid-cols-2 gap-4 p-4">
+                                        <div class="campaign-image">
+                                            <img src="//www.shopgivenchybeauty.ae/cdn/shop/files/GG-SOCIETY_Mobile_HP_Campaign_Push_Ingredients_Visuals_516x385_100kb_170x.jpg?v=1676274913" alt="" />
                                         </div>
-                                        <div class="camaign-links">
-                                            <a href="#" class="underline">Discover</a>
+                                        <div class="camaign-content grid">
+                                            <div class="camaign-heading uppercase">
+                                                Gentelmen Society
+                                            </div>
+                                            <div class="camaign-links">
+                                                <a href="#" class="underline">Discover</a>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
 
-                                <div class="grid grid-cols-2 gap-4 p-4">
-                                    <div class="campaign-image">
-                                        <img src="//www.shopgivenchybeauty.ae/cdn/shop/files/GG-SOCIETY_Mobile_HP_Campaign_Push_Ingredients_Visuals_516x385_100kb_170x.jpg?v=1676274913" alt="">
-                                    </div>
-                                    <div class="camaign-content grid">
-                                        <div class="camaign-heading uppercase">
-                                            Gentelmen Society
+                                    <div class="grid grid-cols-2 gap-4 p-4">
+                                        <div class="campaign-image">
+                                            <img src="//www.shopgivenchybeauty.ae/cdn/shop/files/GG-SOCIETY_Mobile_HP_Campaign_Push_Ingredients_Visuals_516x385_100kb_170x.jpg?v=1676274913" alt="" />
                                         </div>
-                                        <div class="camaign-links">
-                                            <a href="#" class="underline">Discover</a>
+                                        <div class="camaign-content grid">
+                                            <div class="camaign-heading uppercase">
+                                                Gentelmen Society
+                                            </div>
+                                            <div class="camaign-links">
+                                                <a href="#" class="underline">Discover</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </li>
-                    <li class="grid grid-cols-[1fr,20px] gap-4 items-center"><a href="#" class="font-semibold uppercase text-sm">Make Up</a> {% render 'arrow-right' %}</button></li>
-                    <li class="grid grid-cols-[1fr,20px] gap-4 items-center"><a href="#" class="font-semibold uppercase text-sm">Skincare</a>
-                    <button>
-                        {% render 'arrow-right' %}
-                    </button>  </li>
-                    <li><a href="#" class="font-semibold uppercase text-sm">Couture</a></li>
-                </ul>
+                        </li>
+                        <li class="grid grid-cols-[1fr,20px] gap-4 items-center">
+                            <a href="#" class="font-semibold uppercase text-sm">La Collection Particuler</a>
+                            <button class="submenu-button">
+                                {% render 'arrow-right' %}
+                            </button>
+                            <div class="submenu-container fixed top-0 bg-white left-0 w-full h-full overflow-y-auto translate-x-[100%] transition duration-150 ease-out">
+                                <div class="submenu-header grid grid-cols-[20px,1fr,30px] items-center py-5 px-4 gap-3 border-b border-[#cecece]">
+                                    <div class="submenu-back">
+                                        {% render 'arrow-back' %}
+                                    </div>
+                                    <div class="text-sm uppercase font-bold">La Collection Particuler</div>
+                                    <div class="menu-close relative">
+                                        {% render 'close-icon' %}
+                                    </div>
+                                </div>
+                                <div class="child-menu-wrap">
+                                    <!-- child links -->
+                                    <ul class="grid gap-4 p-4 child-menu">
+                                        <li><a href="#" class="font-semibold uppercase text-sm">See All Fragrance</a></li>
+                                        <li class="grid grid-cols-[1fr,20px] gap-4 items-center">
+                                            <a href="#" class="font-semibold uppercase text-sm">In The SpotLight</a>
+                                            <button>
+                                                {% render 'arrow-right' %}
+                                            </button>
+                                        </li>
+                                        <li><a href="#" class="font-semibold uppercase text-sm">See All Fragrance</a></li>
+                                        <li class="grid grid-cols-[1fr,20px] gap-4 items-center">
+                                            <a href="#" class="font-semibold uppercase text-sm">In The SpotLight</a>
+                                            <button class="submenu-button">
+                                                {% render 'arrow-right' %}
+                                            </button>
+                                            <!-- grandcgild link -->
+                                            <div class="submenu-container fixed top-0 bg-white left-0 w-full h-full overflow-y-auto translate-x-[100%] transition duration-150 ease-out">
+                                                <div class="submenu-header grid grid-cols-[20px,1fr,30px] items-center py-5 px-4 gap-3 border-b border-[#cecece]">
+                                                    <div class="submenu-back">
+                                                        {% render 'arrow-back' %}
+                                                    </div>
+                                                    <div class="text-sm uppercase font-bold">In The SpotLight 2</div>
+                                                    <div class="menu-close relative">
+                                                        {% render 'close-icon' %}
+                                                    </div>
+                                                </div>
+                                                <div class="child-menu-wrap">
+                                                    <!-- child links -->
+                                                    <ul class="grid gap-4 p-4 child-menu">
+                                                        <li><a href="#" class="font-semibold uppercase text-sm">See All Fragrance 2</a></li>
+                                                        <li><a href="#" class="font-semibold uppercase text-sm">See All Fragrance 2</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- campaign links -->
+                                <div class="campaign-links">
+                                    <div class="grid grid-cols-2 gap-4 p-4">
+                                        <div class="campaign-image">
+                                            <img src="//www.shopgivenchybeauty.ae/cdn/shop/files/GG-SOCIETY_Mobile_HP_Campaign_Push_Ingredients_Visuals_516x385_100kb_170x.jpg?v=1676274913" alt="" />
+                                        </div>
+                                        <div class="camaign-content grid">
+                                            <div class="camaign-heading uppercase">
+                                                Gentelmen Society
+                                            </div>
+                                            <div class="camaign-links">
+                                                <a href="#" class="underline">Discover</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="grid grid-cols-2 gap-4 p-4">
+                                        <div class="campaign-image">
+                                            <img src="//www.shopgivenchybeauty.ae/cdn/shop/files/GG-SOCIETY_Mobile_HP_Campaign_Push_Ingredients_Visuals_516x385_100kb_170x.jpg?v=1676274913" alt="" />
+                                        </div>
+                                        <div class="camaign-content grid">
+                                            <div class="camaign-heading uppercase">
+                                                Gentelmen Society
+                                            </div>
+                                            <div class="camaign-links">
+                                                <a href="#" class="underline">Discover</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="grid grid-cols-2 gap-4 p-4">
+                                        <div class="campaign-image">
+                                            <img src="//www.shopgivenchybeauty.ae/cdn/shop/files/GG-SOCIETY_Mobile_HP_Campaign_Push_Ingredients_Visuals_516x385_100kb_170x.jpg?v=1676274913" alt="" />
+                                        </div>
+                                        <div class="camaign-content grid">
+                                            <div class="camaign-heading uppercase">
+                                                Gentelmen Society
+                                            </div>
+                                            <div class="camaign-links">
+                                                <a href="#" class="underline">Discover</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="grid grid-cols-[1fr,20px] gap-4 items-center"><a href="#" class="font-semibold uppercase text-sm">Make Up</a> {% render 'arrow-right' %}</li>
+                        <li class="grid grid-cols-[1fr,20px] gap-4 items-center">
+                            <a href="#" class="font-semibold uppercase text-sm">Skincare</a>
+                            <button>
+                                {% render 'arrow-right' %}
+                            </button>
+                        </li>
+                        <li><a href="#" class="font-semibold uppercase text-sm">Couture</a></li>
+                    </ul>
+                </div>
+
+                <div class="mobile-nav-footer p-4">
+                    <ul class="grid gap-4">
+                        <li>
+                            <a href="#" class="grid grid-cols-[20px,1fr] gap-3 items-center">
+                                {% render 'user-icon' %}
+                                <span>
+                                    My Account
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="grid grid-cols-[20px,1fr] gap-3 items-center">
+                                {% render 'chat-icon' %}
+                                <span>
+                                    Can we help You ?
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="grid grid-cols-[20px,1fr] gap-3 items-center">
+                                {% render 'phone-icon' %}
+                                <span>
+                                    Customer Services 9816975832
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="grid grid-cols-[20px,1fr] gap-3 items-center">
+                                {% render 'envelop-icon' %}
+                                <span>
+                                    Newsletter
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="grid grid-cols-[20px,1fr] gap-3 items-center">
+                                {% render 'heart-icon' %}
+                                <span>
+                                    Wishlist
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="grid grid-cols-[20px,1fr] gap-3 items-center">
+                                {% render 'location-icon' %}
+                                <span>
+                                    Your Store
+                                </span>
+                            </a>
+                        </li>
+
+                        <li class="grid grid-cols-[1fr,20px] gap-4 items-center">
+                            <a href="#">
+                                Language EN
+                            </a>
+                            <button>
+                                {% render 'arrow-right' %}
+                            </button>
+                        </li>
+                        <li class="grid grid-cols-[1fr,20px] gap-4 items-center">
+                            <a href="#" class="grid grid-cols-[20px,1fr] gap-3 items-center">
+                                {% render 'global-icon' %}
+                                <span class="font-semibold text-sm">
+                                    UAE (AED)
+                                </span>
+                            </a>
+                            <button>
+                                {% render 'arrow-right' %}
+                            </button>
+                        </li>
+                    </ul>
+                </div>
             </div>
-
-            <div class="mobile-nav-footer p-4">
-                <ul class="grid gap-4">
-                    <li>
-                       <a href="#" class="grid grid-cols-[20px,1fr] gap-3 items-center">
-                        {% render 'user-icon' %}
-                        <span>
-                            My Account
-                           </span>
-                       </a> 
-                    </li>
-                    <li>
-                       <a href="#" class="grid grid-cols-[20px,1fr] gap-3 items-center">
-                        {% render 'chat-icon' %}
-                        <span>
-                            Can we help You ?
-                           </span>
-                       </a> 
-                    </li>
-                    <li>
-                        <a href="#" class="grid grid-cols-[20px,1fr] gap-3 items-center">
-                         {% render 'phone-icon' %}
-                         <span>
-                             Customer Services 9816975832
-                            </span>
-                        </a> 
-                     </li>
-                     <li>
-                        <a href="#" class="grid grid-cols-[20px,1fr] gap-3 items-center">
-                         {% render 'envelop-icon' %}
-                         <span>
-                             Newsletter
-                            </span>
-                        </a> 
-                     </li>
-                     <li>
-                        <a href="#" class="grid grid-cols-[20px,1fr] gap-3 items-center">
-                         {% render 'heart-icon' %}
-                         <span>
-                             Wishlist
-                            </span>
-                        </a> 
-                     </li>
-                     <li>
-                        <a href="#" class="grid grid-cols-[20px,1fr] gap-3 items-center">
-                         {% render 'location-icon' %}
-                         <span>
-                             Your Store
-                            </span>
-                        </a> 
-                     </li>
-
-                     <li class="grid grid-cols-[1fr,20px] gap-4 items-center">
-                        <a href="#">
-                        Language EN
-                        </a> 
-                     <button>
-                         {% render 'arrow-right' %}
-                     </button>  </li>
-                     <li class="grid grid-cols-[1fr,20px] gap-4 items-center">
-                        <a href="#" class="grid grid-cols-[20px,1fr] gap-3 items-center">
-                            {% render 'global-icon' %}
-                            <span class="font-semibold text-sm">
-                                UAE (AED)
-                               </span>
-                           </a> 
-                     <button>
-                         {% render 'arrow-right' %}
-                     </button>  </li>
-
-                </ul>
-            </div>
-
         </div>
+        <!-- Desktop Navbar-->
+        <div class="navbar-desktop hidden border-b border-[#ddd] lg:block">
+            <div class="container mx-auto relative z-10">
+                <nav class="pt-5">
+                    <ul class="grid grid-flow-col place-content-between">
+                        <li class="border-b-4 border-transparent hover:border-black transition">
+                            <a href="#" class="uppercase text-sm pb-5 inline-block">New</a>
+                        </li>
+                        <li class="border-b-4 border-transparent hover:border-black transition">
+                            <a href="#" class="uppercase text-sm pb-5 inline-block">Excliusive Services</a>
+                        </li>
+                        <li  class="border-b-4 border-transparent hover:border-black transition">
+                            <a href="#" class="uppercase text-sm pb-5 inline-block">Fragrance</a>
+                        </li>
+                        <li  class="border-b-4 border-transparent hover:border-black transition">
+                            <a href="#" class="uppercase text-sm pb-5 inline-block">La Collection Particuliere</a>
+                        </li>
+                        <li class="submenu-item border-b-4 border-transparent hover:border-black transition">
+                            <a href="#" class="uppercase text-sm pb-5 inline-block">Make Up</a>
+                            <div class="desktop-submenu absolute left-0 w-full top-full hidden transition">
+                                <div class="submenu-top py-10">
+                                    <div class="container mx-auto">
+                                        <div class="grid grid-cols-[180px,1fr] gap-8 relative">
+                                            <div class="submenu-card-left border-r border-[#ddd] pr-3">
+                                                <ul class="submenu-wrap grid gap-3">
+                                                    <li>
+                                                        <a href="#" class="uppercase font-bold text-sm">In The SpotLight</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="hover:underline text-sm">Mini & Travel Size</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="hover:underline text-sm">Best Seller</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="uppercase font-bold text-sm">Excliusive Services</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="submenu-card-right relative pr-24">
+                                                <div class="grid grid-flow-col place-content-start gap-16">
+                                                    <div class="submenu-card">
+                                                        <ul class="submenu-wrap grid gap-3">
+                                                            <li>
+                                                                <a href="#" class="uppercase font-bold text-sm">Lips</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" class="hover:underline text-sm">Lipstick</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" class="hover:underline text-sm">Lip Liner</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" class="hover:underline text-sm">Lip Balm</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="submenu-card">
+                                                        <ul class="submenu-wrap grid gap-3">
+                                                            <li>
+                                                                <a href="#" class="uppercase font-bold text-sm">Face</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" class="hover:underline text-sm">Prisme Libre Routine </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" class="hover:underline text-sm">Foundation </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" class="text-sm">Concealer </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" class="text-sm">Primer </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" class="text-sm">Powder </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" class="text-sm">Blush </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="submenu-card">
+                                                        <ul class="submenu-wrap grid gap-3">
+                                                            <li>
+                                                                <a href="#" class="uppercase font-bold text-sm">Eyes</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" class="hover:underline text-sm">Mascara</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" class="hover:underline text-sm">Eye pencil & Eyeliner </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" class="hover:underline text-sm">Eyeshadow </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
 
+                                                    <div class="submenu-close absolute top-0 right-0">
+                                                        <div class="submenu-close-btn uppercase grid grid-flow-col text-sm items-center cursor-pointer">
+                                                            Close {% render 'close-icon' %}
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
+                                <!-- desktop campaign -->
+
+                                <div class="campaign-desktop border-t border-[#ddd]">
+                                    <div class="container mx-auto">
+                                        <div class="grid grid-cols-3 pt-4 gap-5">
+                                            <div class="campaign-links-desk">
+                                                <div class="grid grid-cols-2 gap-4">
+                                                    <div class="campaign-image">
+                                                        <img src="//www.shopgivenchybeauty.ae/cdn/shop/files/GG-SOCIETY_Mobile_HP_Campaign_Push_Ingredients_Visuals_516x385_100kb_170x.jpg?v=1676274913" alt="" />
+                                                    </div>
+                                                    <div class="camaign-content grid">
+                                                        <div class="camaign-heading uppercase text-sm">
+                                                            Gentelmen Society
+                                                        </div>
+                                                        <div class="camaign-links">
+                                                            <a href="#" class="underline">Discover</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="campaign-links-desk">
+                                                <div class="grid grid-cols-2 gap-4">
+                                                    <div class="campaign-image">
+                                                        <img src="//www.shopgivenchybeauty.ae/cdn/shop/files/GG-SOCIETY_Mobile_HP_Campaign_Push_Ingredients_Visuals_516x385_100kb_170x.jpg?v=1676274913" alt="" />
+                                                    </div>
+                                                    <div class="camaign-content grid">
+                                                        <div class="camaign-heading uppercase text-sm">
+                                                            Gentelmen Society
+                                                        </div>
+                                                        <div class="camaign-links">
+                                                            <a href="#" class="underline">Discover</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="campaign-links-desk">
+                                                <div class="grid grid-cols-2 gap-4">
+                                                    <div class="campaign-image">
+                                                        <img src="//www.shopgivenchybeauty.ae/cdn/shop/files/GG-SOCIETY_Mobile_HP_Campaign_Push_Ingredients_Visuals_516x385_100kb_170x.jpg?v=1676274913" alt="" />
+                                                    </div>
+                                                    <div class="camaign-content grid">
+                                                        <div class="camaign-heading uppercase text-sm">
+                                                            Gentelmen Society
+                                                        </div>
+                                                        <div class="camaign-links">
+                                                            <a href="#" class="underline">Discover</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="submenu-item border-b-4 border-transparent hover:border-black transition">
+                            <a href="#" class="uppercase text-sm pb-5 inline-block">Skincare</a>
+                            <div class="desktop-submenu absolute left-0 w-full top-full hidden transition">
+                                <div class="submenu-top py-10">
+                                    <div class="container mx-auto">
+                                        <div class="grid grid-cols-[180px,1fr] gap-8 relative">
+                                            <div class="submenu-card-left border-r border-[#ddd] pr-3">
+                                                <ul class="submenu-wrap grid gap-3">
+                                                    <li>
+                                                        <a href="#" class="uppercase font-bold text-sm">In The SpotLight</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="hover:underline text-sm">Mini & Travel Size</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="hover:underline text-sm">Best Seller</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="uppercase font-bold text-sm">Excliusive Services</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="submenu-card-right relative pr-24">
+                                                <div class="grid grid-flow-col place-content-start gap-16">
+                                                    <div class="submenu-card">
+                                                        <ul class="submenu-wrap grid gap-3">
+                                                            <li>
+                                                                <a href="#" class="uppercase font-bold text-sm">Lips</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" class="hover:underline text-sm">Lipstick</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" class="hover:underline text-sm">Lip Liner</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" class="hover:underline text-sm">Lip Balm</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="submenu-card">
+                                                        <ul class="submenu-wrap grid gap-3">
+                                                            <li>
+                                                                <a href="#" class="uppercase font-bold text-sm">Face</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" class="hover:underline text-sm">Prisme Libre Routine </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" class="hover:underline text-sm">Foundation </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" class="text-sm">Concealer </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" class="text-sm">Primer </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" class="text-sm">Powder </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" class="text-sm">Blush </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="submenu-card">
+                                                        <ul class="submenu-wrap grid gap-3">
+                                                            <li>
+                                                                <a href="#" class="uppercase font-bold text-sm">Eyes</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" class="hover:underline text-sm">Mascara</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" class="hover:underline text-sm">Eye pencil & Eyeliner </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" class="hover:underline text-sm">Eyeshadow </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+
+                                                    <div class="submenu-close absolute top-0 right-0">
+                                                        <div class="submenu-close-btn uppercase grid grid-flow-col text-sm items-center cursor-pointer">
+                                                            Close {% render 'close-icon' %}
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="border-b-4 border-transparent hover:border-black transition">
+                            <a href="#" class="uppercase text-sm pb-5 inline-block">Couture</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- overlay -->
         </div>
     </div>
-
-
 </header>
