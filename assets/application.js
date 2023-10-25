@@ -44,8 +44,9 @@ subMenuBtn.forEach(function(submenubtn){
 
 // submenu back
 submenuBack.forEach(function(submenuback){ 
-    submenuback.addEventListener("click", function(){
-        const backstep = submenuback.parentNode.parentNode;
+    submenuback.addEventListener("click", function(e){
+     // console.log(e.target.closest('.submenu-container'));
+        const backstep = e.target.closest('.submenu-container');
         backstep.classList.remove("submenu-open");
     })
 })
