@@ -42,7 +42,8 @@ subMenuBtn.forEach(function(submenubtn){
 
 // submenu back
 submenuBack.forEach(function(submenuback){ 
-    submenuback.addEventListener("click", function(){
+    submenuback.addEventListener("click", function(e){
+      console.log(e.target);
         const backstep = submenuback.parentNode.parentNode;
         backstep.classList.remove("submenu-open");
     })
