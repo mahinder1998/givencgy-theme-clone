@@ -52,14 +52,13 @@ submenuBack.forEach(function(submenuback){
 })
 
 
-subMenuItem.forEach(function(item){
-    item.addEventListener("mouseover", function(e){
-        const itemSelect = e.target.closest(".submenu-item");
-        console.log(itemSelect, "itemSelect");
+subMenuItem.forEach(function(e){
+    e.addEventListener("mouseover", function(item){
+        const itemSelect = item.target.closest(".submenu-item");
         itemSelect.classList.add("desktop-submenu-open")
     })
-    item.addEventListener("mouseout", function(e){
-        const itemSelect = e.target.closest(".submenu-item");
+    e.addEventListener("mouseout", function(item){
+        const itemSelect = item.target.closest(".submenu-item");
         itemSelect.classList.remove("desktop-submenu-open")
     })
 })
