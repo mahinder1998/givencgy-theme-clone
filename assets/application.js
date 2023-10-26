@@ -53,8 +53,8 @@ submenuBack.forEach(function(submenuback){
 
 
 subMenuItem.forEach(function(e){
-    e.addEventListener("mouseover", function(item){
-        const itemSelect = item.target.closest(".submenu-item");
+    e.addEventListener("mouseover", function(e){
+        const itemSelect = e.target.closest(".submenu-item");
         itemSelect.classList.add("desktop-submenu-open")
     })
     e.addEventListener("mouseout", function(item){
