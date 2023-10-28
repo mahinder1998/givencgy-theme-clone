@@ -1,6 +1,47 @@
 {
-  "current": "Default",
+  "current": {
+    "sections": {
+      "header": {
+        "type": "header",
+        "blocks": {
+          "310f36bc-d350-404d-b384-378ec49a2f5c": {
+            "type": "megamenu",
+            "settings": {
+              "menu-handle": "make-up",
+              "submenu": "",
+              "campaign-1-image": "shopify:\/\/shop_images\/1.jpg",
+              "campaign-1-title": "Title",
+              "campaign-1-button": "Button",
+              "campaign-1-link": "#",
+              "campaign-2-title": "",
+              "campaign-2-button": "",
+              "campaign-2-link": "",
+              "campaign-3-title": "",
+              "campaign-3-button": "",
+              "campaign-3-link": ""
+            }
+          }
+        },
+        "block_order": [
+          "310f36bc-d350-404d-b384-378ec49a2f5c"
+        ],
+        "settings": {
+          "logo": "",
+          "menu": "main-menu"
+        }
+      },
+      "homepage": {
+        "type": "homepage",
+        "settings": {
+        }
+      }
+    },
+    "content_for_index": [
+
+    ]
+  },
   "presets": {
-    "Default": { }
+    "Default": {
+    }
   }
 }
