@@ -30,8 +30,9 @@
         "dbd114c2-6c93-4c84-839b-fac97bfba8f7": {
           "type": "collection-card-list",
           "settings": {
-            "card-title": "<p>Title<\/p>",
-            "card-link": ""
+            "card_imgae": "shopify:\/\/shop_images\/PL-LOOSE-POWDER_QUICK-ACCESS1_WW_200x_19ac71b3-03ac-450d-bffd-8299cb32ad4e.jpg",
+            "card-title": "<p>PRISME LIBRE ROUTINE<\/p>",
+            "card-link": "#"
           }
         },
         "e3df5032-781b-4965-b58a-2dd336946209": {
