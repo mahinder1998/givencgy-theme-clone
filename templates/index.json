@@ -1,8 +1,40 @@
 {
-    "sections":{
-        "template":{
-            "type": "home_collection_card"
+  "sections": {
+    "template": {
+      "type": "home_collection_card",
+      "blocks": {
+        "9f758f0b-02bb-4be3-868b-8470547ee5ea": {
+          "type": "collection-card-list",
+          "settings": {
+            "card-title": "<p>Title<\/p>",
+            "card-link": ""
+          }
+        },
+        "a9e3b68d-47e7-45a8-a601-fe696a40933e": {
+          "type": "collection-card-list",
+          "settings": {
+            "card-title": "<p>Title<\/p>",
+            "card-link": ""
+          }
+        },
+        "9a071687-4dac-4089-b2ae-d8aed424fb38": {
+          "type": "collection-card-list",
+          "settings": {
+            "card-title": "<p>Title<\/p>",
+            "card-link": ""
+          }
         }
-    },
-    "order":["template"]
+      },
+      "block_order": [
+        "9f758f0b-02bb-4be3-868b-8470547ee5ea",
+        "a9e3b68d-47e7-45a8-a601-fe696a40933e",
+        "9a071687-4dac-4089-b2ae-d8aed424fb38"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "template"
+  ]
 }
