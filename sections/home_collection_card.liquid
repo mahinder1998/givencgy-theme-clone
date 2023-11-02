@@ -6,7 +6,11 @@
                 {% when 'collection-card-list' %}
                   <div class="keen-slider__slide hm-collection-items relative grid grid-flow-row gap-2">
                     <div class="hm-collection-image">
+                      {% if block.settings.card_imgae %}
                         <img src="https://www.shopgivenchybeauty.ae/cdn/shop/files/INTERDIT-EDPRU_QUICK-ACCESS_EDPRU-KV_200x.jpg?v=1696166018" alt="">
+                        {% else %}
+                        please upload image
+                      {% endif %}
                     </div>
                     <div class="hm-collection-content text-sm uppercase">
                         L'INTERDIT EAU DE PARFUM ROUGE ULTIME
