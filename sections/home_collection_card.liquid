@@ -17,7 +17,9 @@
                         {{ block.settings.card-title }}
                     </div>
                     {% endif %}
-                    <a href="#" class="hm-collection-links absolute top-0 left-0 w-full h-full"></a>
+                    {% if block.settings.card-link %}
+                    <a href="{{ block.settings.card-link }}" class="hm-collection-links absolute top-0 left-0 w-full h-full"></a>
+                    {% endif %}
                   </div>
                 {% endcase %}
             {% endfor %}
