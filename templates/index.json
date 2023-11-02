@@ -46,8 +46,9 @@
         "3bb7ebd2-4df5-4a2e-9f4c-734ce4b667e7": {
           "type": "collection-card-list",
           "settings": {
-            "card-title": "<p>Title<\/p>",
-            "card-link": ""
+            "card_imgae": "shopify:\/\/shop_images\/QUICK-ACCESS_SHIPPING_WW_DESKTOP_200x_42ff291e-26db-4b9f-88ea-7b5ca77c5e20.jpg",
+            "card-title": "<p><strong>EXCLUSIVE SERVICES<\/strong><\/p>",
+            "card-link": "#"
           }
         }
       },
