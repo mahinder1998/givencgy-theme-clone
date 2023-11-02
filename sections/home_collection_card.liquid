@@ -3,15 +3,18 @@
         <div id="hm-collection-slider" class="keen-slider hm-collection-slider grid grid-cols-3 gap-3 mx-3 md:grid-cols-6  md:gap-8 md:mx-0" >
 
             {% for block in section.blocks %}
-            <div class="keen-slider__slide hm-collection-items relative grid grid-flow-row gap-2">
-                <div class="hm-collection-image">
-                    <img src="https://www.shopgivenchybeauty.ae/cdn/shop/files/INTERDIT-EDPRU_QUICK-ACCESS_EDPRU-KV_200x.jpg?v=1696166018" alt="">
-                </div>
-                <div class="hm-collection-content text-sm uppercase">
-                    L'INTERDIT EAU DE PARFUM ROUGE ULTIME
-                </div>
-                <a href="#" class="hm-collection-links absolute top-0 left-0 w-full h-full"></a>
-              </div>
+              {% case block_type %}
+                {% when 'collection-card-list' %}
+                  <div class="keen-slider__slide hm-collection-items relative grid grid-flow-row gap-2">
+                    <div class="hm-collection-image">
+                        <img src="https://www.shopgivenchybeauty.ae/cdn/shop/files/INTERDIT-EDPRU_QUICK-ACCESS_EDPRU-KV_200x.jpg?v=1696166018" alt="">
+                    </div>
+                    <div class="hm-collection-content text-sm uppercase">
+                        L'INTERDIT EAU DE PARFUM ROUGE ULTIME
+                    </div>
+                    <a href="#" class="hm-collection-links absolute top-0 left-0 w-full h-full"></a>
+                  </div>
+                {% endcase %}
             {% endfor %}
            
         </div>
