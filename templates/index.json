@@ -38,7 +38,8 @@
         "e3df5032-781b-4965-b58a-2dd336946209": {
           "type": "collection-card-list",
           "settings": {
-            "card-title": "<p>Title<\/p>",
+            "card_imgae": "shopify:\/\/shop_images\/QUICK_ACCESS_FLACON_324x434_180k_200x_37978d37-5f4c-4bba-9d20-a15fea9cd66c.jpg",
+            "card-title": "<p><strong> NEW <\/strong>TÉMERAIRE<\/p>",
             "card-link": ""
           }
         },
