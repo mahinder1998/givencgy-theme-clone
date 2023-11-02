@@ -23,12 +23,36 @@
             "card-title": "<p>Title<\/p>",
             "card-link": ""
           }
+        },
+        "dbd114c2-6c93-4c84-839b-fac97bfba8f7": {
+          "type": "collection-card-list",
+          "settings": {
+            "card-title": "<p>Title<\/p>",
+            "card-link": ""
+          }
+        },
+        "e3df5032-781b-4965-b58a-2dd336946209": {
+          "type": "collection-card-list",
+          "settings": {
+            "card-title": "<p>Title<\/p>",
+            "card-link": ""
+          }
+        },
+        "3bb7ebd2-4df5-4a2e-9f4c-734ce4b667e7": {
+          "type": "collection-card-list",
+          "settings": {
+            "card-title": "<p>Title<\/p>",
+            "card-link": ""
+          }
         }
       },
       "block_order": [
         "9f758f0b-02bb-4be3-868b-8470547ee5ea",
         "a9e3b68d-47e7-45a8-a601-fe696a40933e",
-        "9a071687-4dac-4089-b2ae-d8aed424fb38"
+        "9a071687-4dac-4089-b2ae-d8aed424fb38",
+        "dbd114c2-6c93-4c84-839b-fac97bfba8f7",
+        "e3df5032-781b-4965-b58a-2dd336946209",
+        "3bb7ebd2-4df5-4a2e-9f4c-734ce4b667e7"
       ],
       "settings": {
       }
