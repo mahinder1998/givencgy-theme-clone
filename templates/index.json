@@ -1,8 +1,70 @@
 {
-    "sections":{
-        "template":{
-            "type": "home_collection_card"
+  "sections": {
+    "template": {
+      "type": "home_collection_card",
+      "blocks": {
+        "9f758f0b-02bb-4be3-868b-8470547ee5ea": {
+          "type": "collection-card-list",
+          "settings": {
+            "card_imgae": "shopify:\/\/shop_images\/INTERDIT-EDPRU_QUICK-ACCESS_EDPRU-KV_200x_5d6cb491-b23f-4992-9d9d-02f2b23c695c.jpg",
+            "card-title": "<p><strong>L'INTERDIT <\/strong>EAU DE PARFUM ROUGE ULTIME<\/p>",
+            "card-link": "#"
+          }
+        },
+        "a9e3b68d-47e7-45a8-a601-fe696a40933e": {
+          "type": "collection-card-list",
+          "settings": {
+            "card_imgae": "shopify:\/\/shop_images\/CREAM_VELVET_QUICK_ACCESS1_MOBILE_DEKSTOP_200x_79dd7955-b38b-42f3-b98c-c45ff816b46e.jpg",
+            "card-title": "<p><strong>NEW <\/strong>LE ROUGE INTERDIT  CREAM VELVET<\/p>",
+            "card-link": "#"
+          }
+        },
+        "9a071687-4dac-4089-b2ae-d8aed424fb38": {
+          "type": "collection-card-list",
+          "settings": {
+            "card_imgae": "shopify:\/\/shop_images\/GG-SOCIETY_HP_Quick_Access_Insitu_Visuals_02_324x434_180ko_200x_12170961-187f-4f18-8c77-b515eb0ddfe9.jpg",
+            "card-title": "<p>GENTLEMAN SOCIETY<\/p>",
+            "card-link": "#"
+          }
+        },
+        "dbd114c2-6c93-4c84-839b-fac97bfba8f7": {
+          "type": "collection-card-list",
+          "settings": {
+            "card_imgae": "shopify:\/\/shop_images\/PL-LOOSE-POWDER_QUICK-ACCESS1_WW_200x_19ac71b3-03ac-450d-bffd-8299cb32ad4e.jpg",
+            "card-title": "<p><strong>PRISME LIBRE ROUTINE<\/strong><\/p>",
+            "card-link": "#"
+          }
+        },
+        "e3df5032-781b-4965-b58a-2dd336946209": {
+          "type": "collection-card-list",
+          "settings": {
+            "card_imgae": "shopify:\/\/shop_images\/QUICK_ACCESS_FLACON_324x434_180k_200x_37978d37-5f4c-4bba-9d20-a15fea9cd66c.jpg",
+            "card-title": "<p><strong> NEW <\/strong>TÉMERAIRE<\/p>",
+            "card-link": ""
+          }
+        },
+        "3bb7ebd2-4df5-4a2e-9f4c-734ce4b667e7": {
+          "type": "collection-card-list",
+          "settings": {
+            "card_imgae": "shopify:\/\/shop_images\/QUICK-ACCESS_SHIPPING_WW_DESKTOP_200x_42ff291e-26db-4b9f-88ea-7b5ca77c5e20.jpg",
+            "card-title": "<p><strong>EXCLUSIVE SERVICES<\/strong><\/p>",
+            "card-link": "#"
+          }
         }
-    },
-    "order":["template"]
+      },
+      "block_order": [
+        "9f758f0b-02bb-4be3-868b-8470547ee5ea",
+        "a9e3b68d-47e7-45a8-a601-fe696a40933e",
+        "9a071687-4dac-4089-b2ae-d8aed424fb38",
+        "dbd114c2-6c93-4c84-839b-fac97bfba8f7",
+        "e3df5032-781b-4965-b58a-2dd336946209",
+        "3bb7ebd2-4df5-4a2e-9f4c-734ce4b667e7"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "template"
+  ]
 }
