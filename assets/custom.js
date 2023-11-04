@@ -100,11 +100,11 @@ function navigation(slider) {
   var slider = new KeenSlider("#hm-collection-slider", {
     breakpoints: {
         "(min-width: 300px)": {
-          slides: { perView: 3.5, spacing: 5 },
+          slides: { perView: 2.5, spacing: 15 },
         },
         "(min-width: 992px)": {
             disabled: true,
         },
       },
-      slides: { perView: 3 },
+      slides: { perView: 2 },
   },[navigation])   

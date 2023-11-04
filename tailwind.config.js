@@ -17,6 +17,7 @@ module.exports = {
     extend: {
       fontFamily:{
         mavenReg: "Maven Pro",
+        robotoBold: "Roboto Condensed"
       }
     },
   },

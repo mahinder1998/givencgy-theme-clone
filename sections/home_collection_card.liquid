@@ -1,13 +1,13 @@
-<section id="hm-collection-card" class="my-5 md:my-10">
+<section id="hm-collection-card" class="my-5 mx-3 md:my-10 lg:mx-0">
     <div class="container mx-auto overflow-x-hidden">
-        <div id="hm-collection-slider" class="keen-slider hm-collection-slider grid grid-cols-3 gap-3 mx-3 md:grid-cols-6  md:gap-8 md:mx-0" >
+        <div id="hm-collection-slider" class="keen-slider hm-collection-slider lg:grid lg:grid-cols-6 lg:gap-8 items-start" >
             {% for block in section.blocks %}
               {% case block.type %}
                 {% when 'collection-card-list' %}
                   <div class="keen-slider__slide hm-collection-items relative grid grid-flow-row gap-2">
                     <div class="hm-collection-image">
                       {% if block.settings.card_imgae %}
-                          <img src="{{ block.settings.card_imgae  | img_url: ''}}" alt="{{ block.settings.card_image.alt }}" />
+                          <img src="{{ block.settings.card_imgae  | img_url: ''}}" alt="{{ block.settings.card_image.alt }}" class="w-full"  />
                         {% else %}
                         {{ 'lifestyle-1' | placeholder_svg_tag }}
                       {% endif %}

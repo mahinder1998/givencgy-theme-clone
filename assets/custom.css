@@ -58,6 +58,11 @@
 .navigation-wrapper {
     position: relative;
 }
+@media(min-width:992px){
+  #hm-collection-card .arrow {
+    display: none;
+  }
+}
 
 
 
