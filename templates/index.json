@@ -62,9 +62,15 @@
       ],
       "settings": {
       }
+    },
+    "0c9a5782-4365-4a10-a42e-02d6db001dd4": {
+      "type": "featured-product",
+      "settings": {
+      }
     }
   },
   "order": [
-    "template"
+    "template",
+    "0c9a5782-4365-4a10-a42e-02d6db001dd4"
   ]
 }
