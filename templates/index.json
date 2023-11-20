@@ -70,7 +70,23 @@
     },
     "78427953-d740-465c-929a-94c68193e604": {
       "type": "custom-slider",
+      "blocks": {
+        "22c79477-73c8-461e-a1fb-ae69ca4599e7": {
+          "type": "slider-content",
+          "settings": {
+            "slider-image": "shopify:\/\/shop_images\/green-t-shirt.jpg",
+            "slider-image-title": "title 1"
+          }
+        }
+      },
+      "block_order": [
+        "22c79477-73c8-461e-a1fb-ae69ca4599e7"
+      ],
       "settings": {
+        "section-heading": "Sourced From Earth’s <br> Most Powerful Superfoods",
+        "section-description": "<p><span class=\"text-span\">85<\/span>+ Superfoods, Nutrients &amp; Plant-Based Ingredients.<\/p>",
+        "button": "See All",
+        "button-link": ""
       }
     }
   },
