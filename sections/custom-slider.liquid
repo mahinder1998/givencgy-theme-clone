@@ -1,12 +1,110 @@
+<section class="superfoods">
+  <div class="container">
+    <div class="slick-wrapper">
+      <div class="cantant banner-text">
+        <h2>{{ section.settings.title }}</h2>
+        <p>{{ section.settings.description }}</p>
+      </div>
+     </div>
+    <div id="slick2" class="slider">
+      <div class="slide-item">
+        <div class="img-box">
+                  {% for image in section.settings.images %}
+            <div class="slide-item">
+              <img src="{{ image | img_url: '800x' }}" alt="Slide Image">
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<style>
+  /* styles.scss or theme.scss or your custom stylesheet */
+
+.custom-image-with-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.text-container {
+  flex: 1;
+  padding: 20px;
+}
+
+.text-container h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.text-container p {
+  font-size: 16px;
+  color: #666;
+}
+
+</style>
+
+
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "Custom slider Image text",
+  "settings": [
+    {
+      "type": "text",
+      "id": "alt_text",
+      "label": "Alt Text",
+      "default": "Image Alt Text"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "text",
+      "id": "description",
+      "label": "Description"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "slide",
+      "name": "Slide",
+      "settings": [
+        {
+          "type": "text",
+          "id": "alt_text",
+          "label": "Alt Text",
+          "default": "Image Alt Text"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "text",
+          "id": "description",
+          "label": "Description"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Image with Text",
+      "category": "Custom"
+    }
+  ]
+}
+
+
 {% endschema %}
-
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}
