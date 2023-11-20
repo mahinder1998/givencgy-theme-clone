@@ -72,6 +72,18 @@
     },
     "d5598896-930e-4f0c-9a7f-ccc2dd05d7ff": {
       "type": "custom-slider",
+      "blocks": {
+        "0e02a1e0-0d1c-47cf-88de-e7dbdc015aa7": {
+          "type": "slider-content",
+          "settings": {
+            "slider-image": "shopify:\/\/shop_images\/QUICK-ACCESS_SHIPPING_WW_DESKTOP_200x_42ff291e-26db-4b9f-88ea-7b5ca77c5e20.jpg",
+            "slider-image-title": "image 1"
+          }
+        }
+      },
+      "block_order": [
+        "0e02a1e0-0d1c-47cf-88de-e7dbdc015aa7"
+      ],
       "settings": {
         "section-heading": "Sourced From Earth’s <br> Most Powerful Superfoods",
         "section-description": "<p><span class=\"text-span\">85<\/span>+ Superfoods, Nutrients &amp; Plant-Based Ingredients.<\/p>",
