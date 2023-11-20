@@ -70,44 +70,8 @@
       "settings": {
       }
     },
-    "d5598896-930e-4f0c-9a7f-ccc2dd05d7ff": {
+    "d8e2b6f1-09f3-4a0f-9b58-55da4b583644": {
       "type": "custom-slider",
-      "blocks": {
-        "0e02a1e0-0d1c-47cf-88de-e7dbdc015aa7": {
-          "type": "slider-content",
-          "settings": {
-            "slider-image": "shopify:\/\/shop_images\/QUICK-ACCESS_SHIPPING_WW_DESKTOP_200x_42ff291e-26db-4b9f-88ea-7b5ca77c5e20.jpg",
-            "slider-image-title": "image 1"
-          }
-        },
-        "3fc1ab53-ac85-490a-90e9-7c160dc597f3": {
-          "type": "slider-content",
-          "settings": {
-            "slider-image": "shopify:\/\/shop_images\/QUICK_ACCESS_FLACON_324x434_180k_200x_37978d37-5f4c-4bba-9d20-a15fea9cd66c.jpg",
-            "slider-image-title": "image 2"
-          }
-        },
-        "70dfc5e5-e7e3-4308-b7a7-78803ca39b5f": {
-          "type": "slider-content",
-          "settings": {
-            "slider-image": "shopify:\/\/shop_images\/PL-LOOSE-POWDER_QUICK-ACCESS1_WW_200x_19ac71b3-03ac-450d-bffd-8299cb32ad4e.jpg",
-            "slider-image-title": "image 3"
-          }
-        },
-        "707d4cbe-0ad8-4de1-977f-ab32b0f1b2d6": {
-          "type": "slider-content",
-          "settings": {
-            "slider-image": "shopify:\/\/shop_images\/INTERDIT-EDPRU_QUICK-ACCESS_EDPRU-KV_200x_5d6cb491-b23f-4992-9d9d-02f2b23c695c.jpg",
-            "slider-image-title": "image 4"
-          }
-        }
-      },
-      "block_order": [
-        "0e02a1e0-0d1c-47cf-88de-e7dbdc015aa7",
-        "3fc1ab53-ac85-490a-90e9-7c160dc597f3",
-        "70dfc5e5-e7e3-4308-b7a7-78803ca39b5f",
-        "707d4cbe-0ad8-4de1-977f-ab32b0f1b2d6"
-      ],
       "settings": {
         "section-heading": "Sourced From Earth’s <br> Most Powerful Superfoods",
         "section-description": "<p><span class=\"text-span\">85<\/span>+ Superfoods, Nutrients &amp; Plant-Based Ingredients.<\/p>",
@@ -119,6 +83,6 @@
   "order": [
     "template",
     "0c9a5782-4365-4a10-a42e-02d6db001dd4",
-    "d5598896-930e-4f0c-9a7f-ccc2dd05d7ff"
+    "d8e2b6f1-09f3-4a0f-9b58-55da4b583644"
   ]
 }
