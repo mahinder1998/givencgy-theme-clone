@@ -14,7 +14,7 @@
                   {% when 'slide' %}
                   <div class="slide-item">
                         <div class="img-box">
-                            <img src="images/Camu_Camu_CreamBG_250x.avif"> 
+                           {{ block.settings.slider-image | image_url: width: '' | image_tag }}
                             <h2>Camu Camu</h2>
                         </div>
                    </div>
