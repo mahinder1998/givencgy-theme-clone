@@ -67,10 +67,16 @@
       "type": "featured-product",
       "settings": {
       }
+    },
+    "78427953-d740-465c-929a-94c68193e604": {
+      "type": "custom-slider",
+      "settings": {
+      }
     }
   },
   "order": [
     "template",
-    "0c9a5782-4365-4a10-a42e-02d6db001dd4"
+    "0c9a5782-4365-4a10-a42e-02d6db001dd4",
+    "78427953-d740-465c-929a-94c68193e604"
   ]
 }
