@@ -86,11 +86,19 @@
             "slider-image": "shopify:\/\/shop_images\/QUICK_ACCESS_FLACON_324x434_180k_200x_37978d37-5f4c-4bba-9d20-a15fea9cd66c.jpg",
             "slider-image-title": "image 2"
           }
+        },
+        "70dfc5e5-e7e3-4308-b7a7-78803ca39b5f": {
+          "type": "slider-content",
+          "settings": {
+            "slider-image": "shopify:\/\/shop_images\/PL-LOOSE-POWDER_QUICK-ACCESS1_WW_200x_19ac71b3-03ac-450d-bffd-8299cb32ad4e.jpg",
+            "slider-image-title": "image 3"
+          }
         }
       },
       "block_order": [
         "0e02a1e0-0d1c-47cf-88de-e7dbdc015aa7",
-        "3fc1ab53-ac85-490a-90e9-7c160dc597f3"
+        "3fc1ab53-ac85-490a-90e9-7c160dc597f3",
+        "70dfc5e5-e7e3-4308-b7a7-78803ca39b5f"
       ],
       "settings": {
         "section-heading": "Sourced From Earth’s <br> Most Powerful Superfoods",
