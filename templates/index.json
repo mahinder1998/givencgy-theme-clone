@@ -60,47 +60,19 @@
         "e3df5032-781b-4965-b58a-2dd336946209",
         "3bb7ebd2-4df5-4a2e-9f4c-734ce4b667e7"
       ],
+      "disabled": true,
       "settings": {
       }
     },
     "0c9a5782-4365-4a10-a42e-02d6db001dd4": {
       "type": "featured-product",
+      "disabled": true,
       "settings": {
-      }
-    },
-    "78427953-d740-465c-929a-94c68193e604": {
-      "type": "custom-slider",
-      "blocks": {
-        "22c79477-73c8-461e-a1fb-ae69ca4599e7": {
-          "type": "slider-content",
-          "settings": {
-            "slider-image": "shopify:\/\/shop_images\/green-t-shirt.jpg",
-            "slider-image-title": "title 1"
-          }
-        },
-        "ea812c49-4143-4420-84e7-e4ddabcfdc42": {
-          "type": "slider-content",
-          "settings": {
-            "slider-image": "shopify:\/\/shop_images\/QUICK-ACCESS_SHIPPING_WW_DESKTOP_200x_42ff291e-26db-4b9f-88ea-7b5ca77c5e20.jpg",
-            "slider-image-title": "image 2"
-          }
-        }
-      },
-      "block_order": [
-        "22c79477-73c8-461e-a1fb-ae69ca4599e7",
-        "ea812c49-4143-4420-84e7-e4ddabcfdc42"
-      ],
-      "settings": {
-        "section-heading": "Sourced From Earth’s <br> Most Powerful Superfoods",
-        "section-description": "<p><span class=\"text-span\">85<\/span>+ Superfoods, Nutrients &amp; Plant-Based Ingredients.<\/p>",
-        "button": "See All",
-        "button-link": ""
       }
     }
   },
   "order": [
     "template",
-    "0c9a5782-4365-4a10-a42e-02d6db001dd4",
-    "78427953-d740-465c-929a-94c68193e604"
+    "0c9a5782-4365-4a10-a42e-02d6db001dd4"
   ]
 }
