@@ -11,7 +11,7 @@
             <div id="slick1">
               {% for block in section.blocks %}
                 {% case block.type %}
-                  {% when 'slide' %}
+                  {% when 'slider-content' %}
                   <div class="slide-item">
                         <div class="img-box">
                            {{ block.settings.slider-image | image_url: width: '' | image_tag }}
