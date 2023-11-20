@@ -79,10 +79,18 @@
             "slider-image": "shopify:\/\/shop_images\/QUICK-ACCESS_SHIPPING_WW_DESKTOP_200x_42ff291e-26db-4b9f-88ea-7b5ca77c5e20.jpg",
             "slider-image-title": "image 1"
           }
+        },
+        "3fc1ab53-ac85-490a-90e9-7c160dc597f3": {
+          "type": "slider-content",
+          "settings": {
+            "slider-image": "shopify:\/\/shop_images\/QUICK_ACCESS_FLACON_324x434_180k_200x_37978d37-5f4c-4bba-9d20-a15fea9cd66c.jpg",
+            "slider-image-title": "image 2"
+          }
         }
       },
       "block_order": [
-        "0e02a1e0-0d1c-47cf-88de-e7dbdc015aa7"
+        "0e02a1e0-0d1c-47cf-88de-e7dbdc015aa7",
+        "3fc1ab53-ac85-490a-90e9-7c160dc597f3"
       ],
       "settings": {
         "section-heading": "Sourced From Earth’s <br> Most Powerful Superfoods",
