@@ -14,7 +14,7 @@
                   {% when 'slider-content' %}
                   <div class="slide-item">
                         <div class="img-box">
-                           {{ block.settings.slider-image | image_url: width: '' | image_tag }}
+                            <img src="{{ block.settings.slider-image | img_url: '' }}" />
                             <h2>{{ block.settings.slider-image-title}}</h2>
                         </div>
                    </div>
