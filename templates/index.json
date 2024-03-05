@@ -66,12 +66,12 @@
     },
     "0c9a5782-4365-4a10-a42e-02d6db001dd4": {
       "type": "featured-product",
-      "disabled": true,
       "settings": {
       }
     },
     "d8e2b6f1-09f3-4a0f-9b58-55da4b583644": {
       "type": "custom-slider",
+      "disabled": true,
       "settings": {
         "section-heading": "Sourced From Earth’s <br> Most Powerful Superfoods",
         "section-description": "<p><span class=\"text-span\">85<\/span>+ Superfoods, Nutrients &amp; Plant-Based Ingredients.<\/p>",
